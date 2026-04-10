@@ -1,3 +1,4 @@
+import FinancePreview from "./finance-preview.jsx";
 import { useState, useEffect, useRef, useCallback } from "react";
 import { loadData, saveData } from "./supabase.js";
 
@@ -318,6 +319,7 @@ export default function App(){
 
   return (
     <div style={S.root}>
+      <FinancePreview />
       <style>{`@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');*{box-sizing:border-box;margin:0;padding:0}input,select,textarea{font-family:'Inter',system-ui,sans-serif}input:focus,select:focus{outline:none;border-color:#96262c!important}::selection{background:#96262c44;color:#e6e6e6}@keyframes fadeIn{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:translateY(0)}}@keyframes slideUp{from{opacity:0;transform:translateY(100%)}to{opacity:1;transform:translateY(0)}}@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}@keyframes toastIn{from{opacity:0;transform:translateY(16px)}to{opacity:1;transform:translateY(0)}}`}</style>
 
       <div style={{ display:"flex", justifyContent:"space-between", alignItems:"center", marginBottom:24, paddingTop:12 }}>
