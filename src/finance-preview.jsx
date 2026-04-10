@@ -1,3 +1,8 @@
+export default function FinancePreview() {
+  return (
+    <div> ...something visible... </div>
+  );
+}
 import { useState, useEffect, useRef, useCallback } from "react";
 // Preview mode - in-memory only
 const loadData = async () => null;
